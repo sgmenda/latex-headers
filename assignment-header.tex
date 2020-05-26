@@ -1,0 +1,64 @@
+% Any copyright is dedicated to the Public Domain.
+% https://creativecommons.org/publicdomain/zero/1.0/
+
+\documentclass[12pt]{article}
+
+\usepackage{libertine, libertinust1math, inconsolata, amsfonts, amssymb}
+\usepackage[T1]{fontenc}
+
+\usepackage[margin=1in]{geometry}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{16pt}
+\lhead{UPDATE \texttt{lhead}}
+\rhead{Name (\texttt{ID})\; Student Number}
+\rfoot{Page~\thepage}
+
+\usepackage{amsmath, amsthm, mathtools, physics}
+
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{observation}[theorem]{Observation}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\usepackage[nameinlink]{cleveref}
+
+\newcommand{\CC}{\ensuremath{\mathbb{C}}}
+\newcommand{\NN}{\ensuremath{\mathbb{N}}}
+\newcommand{\FF}{\ensuremath{\mathbb{F}}}
+\newcommand{\KK}{\ensuremath{\mathbb{K}}}
+\newcommand{\RR}{\ensuremath{\mathbb{R}}}
+\newcommand{\ZZ}{\ensuremath{\mathbb{Z}}}
+
+\newcommand{\XOR}{\oplus}
+
+% Physics stuff
+\usepackage{tensor}
+\newcommand\dket[2]{
+    \tensor*{\ket{#2}}{_{#1}}
+}
+\newcommand\dbra[2]{
+    \tensor*[_{#1}]{\bra{#2}}{}
+}
+\newcommand\dip[2]{
+    \tensor*[_{#1}]{\ip{#2}}{_{#1}}
+}
